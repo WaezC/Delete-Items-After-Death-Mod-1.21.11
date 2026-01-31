@@ -11,7 +11,7 @@ public class ExampleMixin {
 
     @Inject(method = "dropInventory", at = @At("HEAD"), cancellable = true)
     private void deleteItemsAfterDeath(CallbackInfo ci) {
-        // Cancel dropping items entirely
+        // Cancel dropping items
         ci.cancel();
     }
 }
