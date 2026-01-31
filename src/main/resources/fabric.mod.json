@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "deleteitemsmod",
+	"version": "${version}",
+	"name": "Delete Items After Death Mod",
+	"description": "This mod deletes any items dropped by the player after they die.",
+	"authors": [
+		"Hypedapower"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/deleteitemsmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.hypedapower.deleteitemsmod.DeleteItemsAfterDeathMod"
+		],
+		"fabric-datagen": [
+			"net.hypedapower.deleteitemsmod.DeleteItemsAfterDeathModDataGenerator"
+		],
+      "client": [
+        "net.hypedapower.deleteitemsmod.DeleteItemsAfterDeathModClient"
+      ]
+	},
+	"mixins": [
+		"deleteitemsmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
