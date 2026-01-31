@@ -12,6 +12,5 @@ public class DeleteItemsAfterDeathMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
 	}
 }
